@@ -11,6 +11,7 @@
     color: #012B34;
     margin: 100px 160px 0 160px;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .title {
@@ -20,12 +21,26 @@
     margin-bottom: 80px;
 }
 
+.wrpp {
+    position: relative;
+}
+
+.fixed {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .block {
     border-top: 1px solid #E6E6E6;
     padding:  30px 0 40px 0;
 }
 
-.block:last-child {
+.wrpp:last-child .block{
     border-bottom: 1px solid #E6E6E6;
 }
 
