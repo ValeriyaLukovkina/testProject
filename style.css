@@ -34,6 +34,7 @@
     font-size: 36px;
     line-height: 120%;
     padding-right: 30px;
+    outline: none;
 }
 
 .block_title:before {
@@ -41,10 +42,15 @@
     display: block;
     float: left;
     margin-right: 5px;
+    list-style: none;
 }
 
 .block_title::marker {
     content: none;
+}
+
+.block_title::-webkit-details-marker {
+    display: none;
 }
 
 .btn {
